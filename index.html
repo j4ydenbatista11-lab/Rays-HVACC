@@ -1,149 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ray's HVAC | New Jersey Heating & Cooling Experts</title>
-  <meta name="description" content="Ray's HVAC provides residential, commercial, and industrial heating and cooling services across Northern New Jersey. Free estimates. 25+ years of experience." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Ray's HVAC | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <img src="image-removebg-preview.png" alt="Ray's HVAC logo" class="logo" />
-        <span class="brand-name">Ray's HVAC</span>
-      </div>
-      <nav class="nav">
-        <a href="#residential" class="nav-link">Residential HVAC</a>
-        <a href="#commercial" class="nav-link">Commercial HVAC</a>
-        <a href="#industrial" class="nav-link">Industrial HVAC</a>
-        <a href="#reviews" class="nav-link">Reviews</a>
-        <a href="#contact" class="nav-link btn btn-small">Contact</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+<body class="font-sans">
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white p-4 flex justify-between">
+    <div class="font-bold">Ray's HVAC</div>
+    <div class="space-x-4">
+      <a href="index.html">Home</a>
+      <a href="residential.html">Residential HVAC</a>
+      <a href="commercial.html">Commercial HVAC</a>
+      <a href="industrial.html">Industrial HVAC</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
     </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-gray-100 p-12 text-center">
+    <h1 class="text-4xl font-bold mb-4">Reliable HVAC Services in Northern New Jersey</h1>
+    <p class="text-lg mb-6">Your comfort is our priority. From installation to emergency repairs, Ray's HVAC has you covered.</p>
+    <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg">Get a Free Estimate</a>
   </header>
 
-  <section class="hero" id="top">
-    <div class="container hero-inner">
-      <div class="hero-copy">
-        <h1>Your Comfort Is Our Business</h1>
-        <p>For over 25 years, Ray’s HVAC has been keeping New Jersey homes and businesses comfortable year‑round. Whether you need a quick repair, a new installation, or routine maintenance, our experts are ready to help — fast.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn">Get a Free Estimate</a>
-          <a href="tel:12017803062" class="btn btn-outline">Call 201‑780‑3062</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="quick-links">
-    <div class="container cards">
-      <a href="#residential" class="card">
-        <h3>Residential HVAC</h3>
-        <p>Reliable comfort at home — repair, install, maintain.</p>
-      </a>
-      <a href="#commercial" class="card">
-        <h3>Commercial HVAC</h3>
-        <p>Keep your team and customers comfortable.</p>
-      </a>
-      <a href="#industrial" class="card">
-        <h3>Industrial HVAC</h3>
-        <p>Scaled solutions, safety‑first, peak performance.</p>
-      </a>
-    </div>
-  </section>
-
-  <section class="why container">
-    <h2>Why Choose Ray’s HVAC</h2>
-    <p>We don’t just fix heating and cooling — we make your space more comfortable and energy‑efficient. From small residential jobs to large‑scale industrial systems, our skilled team delivers reliable service at a fair price.</p>
-    <ul class="benefits">
-      <li><strong>25+ Years Experience</strong> across residential, commercial, and industrial</li>
-      <li><strong>Fast, Reliable Service</strong> for emergencies and routine work</li>
-      <li><strong>Energy‑Efficient Upgrades</strong> that lower bills over time</li>
-      <li><strong>Free Estimates</strong> with clear, upfront pricing</li>
+  <!-- About Section -->
+  <main class="p-8">
+    <h2 class="text-2xl font-bold mb-4">Why Choose Ray's HVAC?</h2>
+    <ul class="list-disc list-inside mb-6">
+      <li>25+ years of experience</li>
+      <li>Residential, Commercial, and Industrial expertise</li>
+      <li>Free estimates</li>
     </ul>
-  </section>
-
-  <section class="maintenance alt">
-    <div class="container">
-      <h2>Maintenance Saves Money</h2>
-      <p>Prevent costly breakdowns and keep your system at peak performance with regular maintenance. We can schedule monthly or seasonal checkups so your equipment stays reliable — and your energy bills stay low.</p>
-      <p class="service-areas"><strong>Serving:</strong> Union, Irvington, Elizabeth, and all of Northern New Jersey.</p>
-    </div>
-  </section>
-
-  <section class="troubleshoot container">
-    <h2>Don’t Know What’s Wrong With Your HVAC?</h2>
-    <p>We’ll diagnose the problem quickly and give you honest options for repair or replacement. We work with all major brands and keep parts stocked for faster fixes.</p>
-  </section>
-
-  <section id="residential" class="services container">
-    <h2>Residential HVAC</h2>
-    <p>Installation, repair, and maintenance for furnaces, boilers, heat pumps, and central AC. Improve comfort and efficiency at home.</p>
-  </section>
-
-  <section id="commercial" class="services container">
-    <h2>Commercial HVAC</h2>
-    <p>Design, install, and maintain systems that keep your business running smoothly — rooftop units, split systems, and more.</p>
-  </section>
-
-  <section id="industrial" class="services container">
-    <h2>Industrial HVAC</h2>
-    <p>High‑capacity heating and cooling with strict safety and reliability standards for warehouses, plants, and production facilities.</p>
-  </section>
-
-  <section id="reviews" class="reviews alt">
-    <div class="container">
-      <h2>Customer Reviews</h2>
-      <div class="review-grid">
-        <blockquote>
-          “Ray’s HVAC is the best! They replaced my AC in one day — professional and friendly.”
-          <span aria-label="5 out of 5 stars">★★★★★</span>
-        </blockquote>
-        <blockquote>
-          “Fast response during an emergency. They saved us during the heatwave!”
-          <span aria-label="5 out of 5 stars">★★★★★</span>
-        </blockquote>
-        <blockquote>
-          “I’ve used Ray’s HVAC for years. They always do quality work at a fair price.”
-          <span aria-label="5 out of 5 stars">★★★★★</span>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact container">
-    <h2>Contact Us</h2>
-    <p>Call us at <a href="tel:12017803062">201‑780‑3062</a> or send a message and we’ll get back to you quickly.</p>
-    <form id="contact-form" aria-label="Contact form">
-      <div class="form-row">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="Your Name" required />
-      </div>
-      <div class="form-row">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="you@example.com" required />
-      </div>
-      <div class="form-row">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
-      </div>
-      <div class="form-actions">
-        <button type="submit" class="btn">Send Message</button>
-        <a class="btn btn-outline" href="mailto:info@rayshvac.com?subject=Estimate%20Request">Email Instead</a>
-      </div>
-    </form>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2025 Ray's HVAC — Serving Union, Irvington, Elizabeth, & Northern New Jersey</p>
-      <a href="#top" class="back-to-top">Back to top ↑</a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <p>Serving Union, Irvington, Elizabeth, and all of Northern New Jersey.</p>
+  </main>
 </body>
 </html>
