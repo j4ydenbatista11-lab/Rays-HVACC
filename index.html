@@ -3,81 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <title>Ray's HVAC | Home</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-900 text-gray-100 font-sans">
   <!-- Navbar -->
-  <nav>
-    <div class="logo">
-      <a href="index.html">
-        <img src="image-removebg-preview.png" alt="Ray's HVAC Logo">
-      </a>
-    </div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="residential.html">Residential HVAC</a>
-      <a href="commercial.html">Commercial HVAC</a>
-      <a href="industrial.html">Industrial HVAC</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="contact.html">Contact</a>
+  <nav class="bg-gray-800 p-4 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center">
+      <img src="image-removebg-preview.png" alt="Ray's HVAC Logo" class="h-12 w-auto">
+    </a>
+
+    <!-- Links -->
+    <div class="space-x-6">
+      <a href="index.html" class="hover:text-blue-400">Home</a>
+      <a href="residential.html" class="hover:text-blue-400">Residential HVAC</a>
+      <a href="commercial.html" class="hover:text-blue-400">Commercial HVAC</a>
+      <a href="industrial.html" class="hover:text-blue-400">Industrial HVAC</a>
+      <a href="reviews.html" class="hover:text-blue-400">Reviews</a>
+      <a href="contact.html" class="hover:text-blue-400">Contact</a>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <header>
-    <h1>Reliable HVAC Services in Northern New Jersey</h1>
-    <p>Your comfort is our priority. From installation to emergency repairs, Ray's HVAC has you covered.</p>
-    <a href="contact.html" class="btn">Get a Free Estimate</a>
+  <header class="text-center py-20 bg-gray-900">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Reliable HVAC Services in Northern New Jersey</h1>
+    <p class="text-lg text-gray-300 mb-6">Your comfort is our priority. From installation to emergency repairs, Ray's HVAC has you covered.</p>
+    <a href="contact.html" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold">Get a Free Estimate</a>
   </header>
 
   <!-- About Section -->
-  <main>
-    <section>
-      <h2>Turn to Us for Your HVAC Needs</h2>
-      <p>
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Turn to Us for Your HVAC Needs</h2>
+      <p class="text-gray-300 mb-4">
         Whether you need routine maintenance, installation, or emergency services, our team is ready to help. 
         If you need a new system, we can design and install it so you can enjoy more efficient heating and cooling. 
-        Upgraded HVAC systems save you money on maintenance and energy costs in the long run. 
+        Upgraded HVAC systems save you money on maintenance and energy costs in the long run.
       </p>
-      <p><strong>Call us today: 201-780-3062</strong></p>
+      <p class="text-blue-400 font-semibold">📞 Call us today: 201-780-3062</p>
     </section>
 
-    <section>
-      <h2>The Importance of HVAC Maintenance</h2>
-      <p>
-        If you want to avoid emergency repair calls, you need to give your HVAC system regular preventive care. 
-        Routine HVAC maintenance can save you money by reducing cooling costs and preventing expensive replacements. 
-        We can return monthly to make sure your commercial or industrial system operates smoothly.
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">The Importance of HVAC Maintenance</h2>
+      <p class="text-gray-300">
+        Avoid costly emergency repair calls with regular preventive care. 
+        Routine HVAC maintenance can reduce cooling costs and prevent expensive replacements. 
+        Our team can provide monthly check-ups to ensure your commercial or industrial system is operating smoothly.
       </p>
     </section>
 
-    <section>
-      <h2>Why Choose Ray’s HVAC?</h2>
-      <ul>
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Why Choose Ray’s HVAC?</h2>
+      <ul class="list-disc list-inside text-gray-300">
         <li>25+ years in business</li>
         <li>Expertise in commercial, industrial, and residential systems</li>
         <li>Free estimates</li>
       </ul>
-      <p>Serving Union, Irvington, Elizabeth, and all of Northern New Jersey.</p>
+      <p class="mt-4 text-gray-300">Serving Union, Irvington, Elizabeth, and all of Northern New Jersey.</p>
     </section>
 
-    <section>
-      <h2>Be Comfortable Year-Round</h2>
-      <p>
+    <section class="text-center">
+      <h2 class="text-2xl font-bold mb-6">Be Comfortable Year-Round</h2>
+      <p class="text-gray-300 mb-6">
         It's hard to be productive at work or relax at home when the temperature isn't right. 
-        Rather than sweating or shivering, bring in the experts for HVAC services in Union, Irvington, and Elizabeth, NJ. 
+        Bring in the experts for HVAC services in Union, Irvington, and Elizabeth, NJ.
       </p>
-      <a href="residential.html" class="btn-secondary">Residential HVAC</a>
-      <a href="commercial.html" class="btn-secondary">Commercial HVAC</a>
-      <a href="industrial.html" class="btn-secondary">Industrial HVAC</a>
-      <a href="contact.html" class="btn">Schedule Service</a>
+      <div class="space-x-4">
+        <a href="residential.html" class="bg-red-600 hover:bg-red-500 text-white px-5 py-2 rounded-md">Residential HVAC</a>
+        <a href="commercial.html" class="bg-red-600 hover:bg-red-500 text-white px-5 py-2 rounded-md">Commercial HVAC</a>
+        <a href="industrial.html" class="bg-red-600 hover:bg-red-500 text-white px-5 py-2 rounded-md">Industrial HVAC</a>
+        <a href="contact.html" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 rounded-md">Schedule Service</a>
+      </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer class="bg-gray-800 text-gray-400 text-center py-6 mt-12">
     <p>© 2025 Ray's HVAC | Union, NJ</p>
-    <p><a href="tel:2017803062">201-780-3062</a></p>
+    <p><a href="tel:2017803062" class="hover:text-blue-400">201-780-3062</a></p>
   </footer>
 </body>
 </html>
