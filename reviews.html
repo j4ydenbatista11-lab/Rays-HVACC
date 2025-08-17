@@ -3,40 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <title>Customer Reviews | Ray's HVAC</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
-<!-- Navbar -->
-<nav class="bg-gray-800 text-gray-100 p-4 flex justify-between items-center">
-  <!-- Logo -->
-  <div class="flex items-center">
-    <a href="index.html">
-      <img src="image-removebg-preview.png" alt="Ray's HVAC Logo" class="h-12">
-    </a>
-  </div>
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4 flex justify-between items-center">
+    <a href="index.html"><img src="image-removebg-preview.png" alt="Ray's HVAC Logo" class="h-12 w-auto"></a>
+    <div class="space-x-6">
+      <a href="index.html" class="hover:text-blue-400">Home</a>
+      <a href="residential.html" class="hover:text-blue-400">Residential HVAC</a>
+      <a href="commercial.html" class="hover:text-blue-400">Commercial HVAC</a>
+      <a href="industrial.html" class="hover:text-blue-400">Industrial HVAC</a>
+      <a href="reviews.html" class="text-blue-400 font-semibold">Reviews</a>
+      <a href="contact.html" class="hover:text-blue-400">Contact</a>
+    </div>
+  </nav>
 
-  <!-- Links -->
-  <div class="space-x-4">
-    <a href="index.html">Home</a>
-    <a href="residential.html">Residential HVAC</a>
-    <a href="commercial.html">Commercial HVAC</a>
-    <a href="industrial.html">Industrial HVAC</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
+  <!-- Page Header -->
+  <header class="text-center py-16">
+    <h1 class="text-4xl font-bold mb-4">Customer Reviews</h1>
+    <p class="text-gray-300">See what customers across Northern New Jersey are saying about Ray’s HVAC.</p>
+  </header>
 
-  <main class="p-8">
-    <h1 class="text-3xl font-bold mb-4">What Our Customers Say</h1>
-    <blockquote class="border-l-4 border-blue-600 pl-4 mb-4">
-      "Ray’s HVAC fixed our AC fast during a heatwave. Professional and affordable!" – ★★★★★
-    </blockquote>
-    <blockquote class="border-l-4 border-blue-600 pl-4 mb-4">
-      "Great service and reliable maintenance for our office building." – ★★★★★
-    </blockquote>
-    <blockquote class="border-l-4 border-blue-600 pl-4">
-      "Knowledgeable team, quick installation, highly recommend!" – ★★★★☆
-    </blockquote>
+  <main class="max-w-3xl mx-auto px-6 py-12 space-y-8">
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <p class="italic">“Ray’s HVAC fixed our AC quickly in the middle of summer. Couldn’t be happier!”</p>
+      <p class="text-blue-400 mt-2">★★★★★ – John D.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <p class="italic">“Professional, reliable, and affordable. Highly recommend them for heating and cooling needs.”</p>
+      <p class="text-blue-400 mt-2">★★★★★ – Maria S.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <p class="italic">“Our business relies on their maintenance services, and they always deliver.”</p>
+      <p class="text-blue-400 mt-2">★★★★★ – David R.</p>
+    </div>
   </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 text-center py-6 mt-12">
+    <p>© 2025 Ray's HVAC | Union, NJ</p>
+    <p><a href="tel:2017803062" class="hover:text-blue-400">201-780-3062</a></p>
+  </footer>
 </body>
 </html>
