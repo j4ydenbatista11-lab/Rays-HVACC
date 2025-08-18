@@ -21,6 +21,20 @@
       border-radius: 4px;
     }
   </style>
+  <script>
+  // Make mouse wheel scroll the carousels left/right
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.scroll-container').forEach(function (row) {
+      row.addEventListener('wheel', function (e) {
+        // If user is wheeling vertically while hovering the row, scroll it sideways
+        if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+          e.preventDefault();           // stop the page from scrolling vertically
+          row.scrollLeft += e.deltaY;   // move the row horizontally
+        }
+      }, { passive: false });
+    });
+  });
+</script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
   <!-- Navbar -->
